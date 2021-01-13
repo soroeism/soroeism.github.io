@@ -5,13 +5,169 @@
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<meta charset="UTF-8">
 
+<style>
+    .fa {
+      margin:auto;
+      padding: 20px;
+      font-size: 30px;
+      width: 30px;
+      text-decoration: none;
+      border-radius: 50%;
+      color: black;
+      }
+    .contact {
+      margin: auto;
+      width: 50%;
+      border: 6px solid Black;
+      padding: 10px;
+      font-family: 'Oswald', sans-serif;
+      background: linear-gradient(rgb(255, 255, 255), rgb(240, 240, 240));
+      }
+
+      .heading {
+        position: relative;
+        text-align: center;
+        margin:auto;
+        transform: translateY(20px);
+      }
+
+      body {
+          background-color: rgb(255, 255, 255);
+
+          }
+      h1 {
+          font-size: 500%;
+          font-weight: 700;
+          font-family: 'Oswald', sans-serif;
+          text-align:center
+      }
+
+      h2 {
+          font-size: 300%;
+          color: white;
+          font-family: 'Oswald', sans-serif;
+          font-weight: 400;
+      }
+
+      p {
+          font-family: 'Oswald', sans-serif;
+      }
+      input[type="submit" i]{
+          font-family: 'Oswald', sans-serif;
+      }
+
+      .centred {
+          margin: auto;
+          width:fit-content;
+          transform: translateY(40px);
+
+      }
+      .topbar {
+        font-family: 'Oswald', sans-serif;
+      }
+      body, html {
+    height: 100%;
+
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin:auto;
+    transform: translateY(20px);
+}
+
+.hero-image {
+  
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/X0fWKHG.png");
+    height: 50%;
+    width: 50%;
+    border: 10px solid black;
+  /*transform: translateY(225px);*/
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 110%;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/*.view {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}*/
+
+.view {
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.view span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.view span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.view:hover span {
+  padding-right: 25px;
+}
+
+.view:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
     </head>
     <body>
-            <h1 style="text-align:center">Work in Progress</h1>
-            <p style="text-align:center">@transportnsw</p>
+        <!-- Navigation -->
+        <div class="topbar">
+<nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item">Home</a>
+    <a href="#projects" class="w3-button w3-bar-item">Projects</a>
+    <a href="#pricing" class="w3-button w3-bar-item">Pricing</a>
+    <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+  </nav>
+      <!--  </div>
+
+            
             <br>
-            <div class="Contact">
+            <div class="contact">
             <form action="/action_page.php">
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname" value="John"><br>
@@ -19,31 +175,27 @@
                 <input type="text" id="lname" name="lname" value="Doe"><br><br>
                 <input type="submit" value="Submit">
               </form>
+              </div>-->
+
+              <div class="heading">
+              <h1>Work in Progress</h1>
+              <p style="text-align:center">Mural artist based in Canberra.</p>
+</div>
+<br>
+<div  class=container>
+                <img class="hero-image" src="https://i.imgur.com/X0fWKHG.png">
+                
+                <div class="hero-text">
+                  <h2>Projects</h2>
+                  <button class="view"><span>View </span></button>
+                </div>
               </div>
-
-              <style>
-                  .Contact {
-                    margin: auto;
-                    width: 50%;
-                    border: 10px solid Black;
-                    padding: 10px;
-                    font-family: 'Oswald', sans-serif;
-                    }
-
-                    body {
-                        background-color: rgb(255, 255, 255);
-
-                        }
-                    h1 {
-                        font-family: 'Oswald', sans-serif;
-                    }
-
-                    p {
-                        font-family: 'Oswald', sans-serif;
-                    }
-                    input[type="submit" i]{
-                        font-family: 'Oswald', sans-serif;
-                    }
-              </style>
     </body>
+
+    <footer>
+        <div class="centred">
+            <a href="https://www.facebook.com/marketplace/profile/100010030201579/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/transportnsw/" class="fa fa-instagram"></a>
+            </div>
+    </footer>
 </html>
