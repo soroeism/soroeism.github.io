@@ -10,12 +10,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 <meta charset="UTF-8">
 <meta charset="UTF-8">
-<!-- CSS and JS file -->
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-<script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
-<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
-<!-- CSS and JS file end here -->
+
+
 </head>
 
 <style>
@@ -30,8 +26,16 @@
 }
 
 .centred {
-    margin: auto;
-    width:fit-content;
+  margin: auto;
+  width: fit-content;
+  position: relative;
+}
+
+.subtext {
+  margin: auto;
+  max-width: 300px;
+  position: relative;
+  text-align: center;
 }
 
 .topbar {
@@ -53,81 +57,21 @@
     opacity: 0.7;
     }
     
-/* Testimonial CSS Code Start */
-/* background */
-.carousel-bg {
-  background-color: none;
-  margin-top: 200px;
-  margin-bottom: 2.5em;
-  margin-left: 200px;
-  margin-right: 200px;
+
+.number { font-size: 2.5em;
+        font-weight: 800px;
+        margin: auto;
+        width: 50%;
+        text-align:center;
 
 }
-/* quote */
-.quote-image {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  padding-top: 30px;
-  width: 60px;
-}
-/* text-style */
-.testimonial-style .testimonial-caption-style {
-    font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 19px;
-  color: #354052;
-  line-height: 30px;
-  bottom: 40%;
-  text-shadow: none;
-  top: 10%;
-}
-.testimonial-style .testimonial-authors {
-    font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  color: #354052;
-  line-height: 30px;
-  margin-top: 40px;
-}
-/* carousel-height-control */
-.testimonial-style .carousel-inner > .item {
-  padding-top: auto;
-  padding-bottom: auto;
-  height: 200px;
-}
-/* carousel-left-right-control */
-.testimonial-style .carousel-control.left {
-  background: none;
-  box-shadow: none;
-  text-shadow: none;
-}
-.testimonial-style .carousel-control.right {
-  background: none;
-  box-shadow: none;
-  text-shadow: none;
-}
-.testimonial-style .carousel-control {
-  color: #354052;
-}
-.testimonial-style .carousel-control:hover {
-  color: #354052;
-  text-decoration: none;
-  transition: background-color 1s ease;
-}
-/* indicators */
-.testimonial-style .carousel-indicators .active {
-  background-color: #fff;
-  width: 14px;
-  height: 14px;
-}
-.testimonial-style .carousel-indicators li {
-  border: 2px solid #354052;
-  background-color: #354052;
-}
-
-span { font-size: 3em;}
- span b { font-size: 70%; font-weight: normal }
+ .description { font-size: 1.5em; 
+          font-weight: normal;
+          margin: auto;
+          width: 50%;
+          text-align:center;
+          display: table;
+          }
 
     </style>
 
@@ -148,55 +92,24 @@ span { font-size: 3em;}
 </div>
 
 
+    <h4 class="number">1.</h4> <h4 class="description">Quote.</h4>
+    <h4 class="number">2.</h4> <h4 class="description">Preliminary design.</h4>
+    <h4 class="number">3.</h4> <h4 class="description">Contract agreement.</h4>
+    <h4 class="number">4.</h4> <h4 class="description">Start. 50% deposit on commencement.</h4>
+    <h4 class="number">5.</h4> <h4 class="description">Finish. Final payment.</h4>
 
-<div class="centred">
-    <span>1.<b>Test</b></span>
-</div>
 
+    <br>
 
+    <p class="subtext">All projects differ in price depending on complexity. Get in touch for a quote !</p>
 
-  <div class="carousel-bg">
-    <!-- Quote Image -->
-    <div>
-      <img src="https://i.imgur.com/gZ5HY0U.png" class="img-responsive quote-image">
-    </div>
-    <!-- Carousel Start below -->
-    <div id="carousel1" class="carousel slide testimonial-style" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel1" data-slide-to="1"></li>
-      </ol>
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <div class="carousel-caption testimonial-caption-style">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
-            <p class="testimonial-authors">Person 1</p>
-          </div>
-        </div>
-        <div class="item">
-          <div class="carousel-caption testimonial-caption-style">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae semper quis lectus nulla at volutpat diam.</p>
-            <p class="testimonial-authors">Person 2</p>
-          </div>
-        </div>
-        
-      </div>
-  
-      <!-- Controls -->
-  
-      <a class="left carousel-control" href="#carousel1" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-      <a class="right carousel-control" href="#carousel1" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
-    </div>
-</div>
-
+    <br>
 
 
 <footer>
-    <div class="centred">
+<div class="centred">
         <a href="https://www.facebook.com/marketplace/profile/100010030201579/" class="fa fa-facebook"></a>
         <a href="https://www.instagram.com/transportnsw/" class="fa fa-instagram"></a>
-        </div>
+</div>
 </footer>
 </html>
