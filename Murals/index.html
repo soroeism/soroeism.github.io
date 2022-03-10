@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Contact</title>
+      <title>Murals</title>
       <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
       <link rel="android-chrome-192x192" type="image/x-icon" href="android-chrome-192x192.png">
       <link rel="android-chrome-512x512" type="image/x-icon" href="android-chrome-512x512.png">
@@ -39,21 +39,13 @@
 
       body {
           background-color: black;
+          /* background-image: url("Github Images/BGimage3.png");
           background-size: cover;
-          background-repeat: no-repeat;
+          background-repeat: no-repeat; */
           color: white;
 
           }
 
-          @media (min-width: 1024px) {
-            body {
-              background-color: black;
-              background-size: cover;
-              background-repeat: no-repeat;
-              color: white;
-              
-            }
-          }
 
       h2 {
           font-size: 300%;
@@ -112,54 +104,56 @@
     right: 0;
 }
 
-
-.subtext {
-    text-align: center;
-}
-
-.contactform {
-  font-family: 'Oswald', sans-serif;
+.imageshowcase {
+  width: 100%;
   text-align: center;
-  padding-bottom: 5em;
 }
 
-.contacttitle {
+.projectstitle {
   font-weight: bold;
   font-family: 'Oswald', sans-serif;
 }
 
-
-.labelsummary {
-  text-align: top;
-}
-
-.questionfield {
-  text-align: center;
-  margin: 0;
-  padding: 0.5em;
-}
-
-input {
-  width: 15em;
-}
-
-.uploadbutton {
+.container {
+  display: flex;
+  max-width: 80%;
+  max-height: 35em;
+  padding: 4% 2%;
+  box-sizing: border-box;
   margin: 0 auto;
-  transform: translateX(40px);
-  padding: 0.5em;
 }
 
-.submitbutton {
-  text-decoration: none;
-  background-color: white;
-  color: black;
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 180%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 2.5vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 4.5;
   font-family: 'Oswald', sans-serif;
-  padding-left: 16px;
-  padding-right: 16px;
-  font-size: 1.5em;
-  border: none;
-
 }
+
+.box:hover { flex: 1 1 30%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
 
 .footerdiv {
   height: 10em;
@@ -171,7 +165,6 @@ input {
 .mail {
   text-align: center;
 }
-
 
 .fa {
       margin:auto;
@@ -195,63 +188,48 @@ input {
         <!-- Navigation -->
         <div class="topbar">
 <nav class="w3-bar">
-  <a href="index.html"><img src="logomark.png" class="logomark"></a>
+  <a href="/"><img src="logomark.png" class="logomark"></a>
     <!-- <a href="./" class="w3-button">Home</a> -->
-    <a href="./index.html" class="w3-button">Home</a>
-    <a href="./murals.html" class="w3-button">Murals</a>
-    <a href="./graffiti.html" class="w3-button">Graffiti</a>
-    <a href="./about.html" class="w3-button">About</a>
+    <a href="/ class="w3-button">Home</a>
+    <a href="Graffiti/" class="w3-button">Graffiti</a>
+    <a href="About/" class="w3-button">About</a>
+    <a href="Contact/" class="w3-button">Contact</a>
   </nav>
         </div>
 
-        <div class="contactform">
-          <h1 class="contacttitle">CONTACT</h1>
-          <form
-          action="https://formspree.io/f/moqrwzwr"
-          method="POST"
-          enctype="multipart/form-data">
-        
-          <label>
-            <p class="questionfield">Name:</p>
-              <input type="text" name="first">
-            </label>
-        <br>
-        <br>  
-          <label>
-            <p class="questionfield">Email:</p>
-            <input type="email" name="_replyto">
-          </label>
-        
-        <br>
-        <br>
-        
-          <label>
-            <p class="questionfield">Summary of work:</p>
-            <textarea name="summary" cols="32" rows="6"></textarea>
-            </label>
-        
-        <br>
-        <br>
-        
-            <label>
-              <p class="questionfield">Size of wall:</p>
-              <input type="text" name="size">
-            </label>
-        
-        <br>
-        <br>
-        
-          <label>
-            <p class="questionfield">Design example (optional):</p>
-            <input type="file" class="uploadbutton" name="upload">
-          </label>
-        
-        <br>
-        <br>
-        
-          <button class="submitbutton" type="submit">SEND</button>
-        </form>
+        <div class="imageshowcase">
+          <h1 class="projectstitle">MURALS</h1>
+        <div class="container">
+          <div class="box">
+            <img src="Github Images/Surface.jpg">
+            <span>Surface Festival. 2022</span>
+          </div>
+          <div class="box">
+            <img src="Github Images/Garden.jpg">
+            <span>Garden fence. 2021</span>
+          </div>
+          <div class="box">
+            <img src="Github Images/Shed.jpg">
+            <span>Bike Shed mural. 2021</span>
+          </div>
+          </div>
+
+          
+      <div class="container">
+          <div class="box">
+            <img src="Github Images/GraffFaceSquare.jpg">
+            <span>Spray paint portrait. 2021</span>
+          </div>
+          <div class="box">
+            <img src="Github Images/CG.jpg">
+            <span>Cairo Gourmet portraits. 2020</span>
+          </div>
+          <div class="box">
+            <img src="Github Images/Face..jpg">
+            <span>Spray paint portrait. 2020</span>
+          </div>
         </div>
+      </div>
 
     </body>
 
@@ -262,9 +240,6 @@ input {
             </div>
         </div>
 </html>
-
-
-
 
 
 
