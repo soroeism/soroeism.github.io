@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Murals</title>
+      <link rel="shortcut icon" type="image/x-icon" href="Favicons/favicon.ico">
+      <link rel="android-chrome-192x192" type="image/x-icon" href="Favicons/android-chrome-192x192.png">
+      <link rel="android-chrome-512x512" type="image/x-icon" href="Favicons/android-chrome-512x512.png">
+      <link rel="apple-touch-icon" type="image/x-icon" href="Favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/x-icon" href="Favicons/favicon-16x16.png">
+      <link rel="icon" type="image/x-icon" href="Favicons/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+      <meta charset="UTF-8">
+
+<style>
+
+      .heading {
+        position: relative;
+        text-align: center;
+        margin:auto;
+        padding-top: 3em;
+        padding-bottom: 3em;
+      }
+
+      .heading img {
+        max-width: 80%;
+        max-height: 15em;
+      }
+
+      .subheading {
+        padding-top: 1em;
+        padding-bottom: 1em;
+      }
+
+      body {
+          background-color: black;
+          /* background-image: url("Github Images/BGimage3.png");
+          background-size: cover;
+          background-repeat: no-repeat; */
+          color: white;
+
+          }
+
+
+      h2 {
+          font-size: 300%;
+          color: white;
+          font-family: 'Oswald', sans-serif;
+          font-weight: 400;
+      }
+
+      p {
+          font-family: 'Oswald', sans-serif;
+          font-size: 130%;
+      }
+      input[type="submit" i]{
+          font-family: 'Oswald', sans-serif;
+      }
+
+      .centred {
+          margin: auto;
+          width:fit-content;
+          transform: translateY(40px);
+
+      }
+      .topbar {
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+        text-align: right;
+        padding: 1em;
+      }
+      body, html {
+    height: 100%;
+
+}
+
+.topright {
+      position: absolute;
+      width: 58px;
+      height: 38px;
+      left: 0;
+      top: 0;
+
+}
+
+.logomark {
+  top: 0;
+  float: left;
+  max-width: 5em;
+  padding: 1em;
+}
+
+.w3-bar {
+  width: 100%;
+}
+
+.w3-button {
+    text-align: right;
+    right: 0;
+}
+
+.imageshowcase {
+  width: 100%;
+  text-align: center;
+}
+
+.projectstitle {
+  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  display: flex;
+  max-width: 80%;
+  max-height: 35em;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0,0,0,.1);
+  line-height: 0;
+}
+
+.box > img {
+  width: 180%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+}
+
+.box > span {
+  font-size: 2.5vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 4.5;
+  font-family: 'Oswald', sans-serif;
+}
+
+.box:hover { flex: 1 1 30%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.footerdiv {
+  height: 10em;
+  width: 100%;
+  text-align: center;
+
+}
+
+.mail {
+  text-align: center;
+}
+
+.fa {
+      margin:auto;
+      font-size: 30px;
+      width: 1em;
+      text-decoration: none;
+      border-radius: 50%;
+      padding-bottom: 1em;
+      color: white;
+      display:inline-block;
+
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+        }
+
+</style>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <div class="topbar">
+<nav class="w3-bar">
+  <a href="/"><img src="logos/logomark.png" class="logomark"></a>
+    <!-- <a href="./" class="w3-button">Home</a> -->
+    <a href="/" class="w3-button">Home</a>
+    <a href="graffiti" class="w3-button">Graffiti</a>
+    <a href="about" class="w3-button">About</a>
+    <a href="contact" class="w3-button">Contact</a>
+  </nav>
+        </div>
+
+        <div class="imageshowcase">
+          <h1 class="projectstitle">MURALS</h1>
+        <div class="container">
+          <div class="box">
+            <img src="Surface.jpg">
+            <span>Surface Festival. 2022</span>
+          </div>
+          <div class="box">
+            <img src="Garden.jpg">
+            <span>Garden fence. 2021</span>
+          </div>
+          <div class="box">
+            <img src="Shed.jpg">
+            <span>Bike Shed mural. 2021</span>
+          </div>
+          </div>
+
+          
+      <div class="container">
+          <div class="box">
+            <img src="GraffFaceSquare.jpg">
+            <span>Spray paint portrait. 2021</span>
+          </div>
+          <div class="box">
+            <img src="CG.jpg">
+            <span>Cairo Gourmet portraits. 2020</span>
+          </div>
+          <div class="box">
+            <img src="Face..jpg">
+            <span>Spray paint portrait. 2020</span>
+          </div>
+        </div>
+      </div>
+
+    </body>
+
+      <div class="footerdiv">
+             <a href="https://www.facebook.com/marketplace/profile/100010030201579/" class="fa fa-facebook"></a>
+             <div class="mail">
+              <a href="mailto:contact@soroe.studio">contact@soroestudio.com</a>
+            </div>
+        </div>
+</html>
+
+
+
+
+
